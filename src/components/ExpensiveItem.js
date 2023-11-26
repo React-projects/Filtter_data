@@ -1,4 +1,14 @@
+import "./ExpensiveItem.css";
+
 function ExpensiveItem() {
-  return <h2> this is my like anyone in this palnt</h2>;
+  return (
+    <div>
+        <div>descimber </div>
+        <div>
+            <h2>mohamed bassl</h2>
+            <div>this is my month</div>
+        </div>
+    </div>
+  )
 }
 export default ExpensiveItem;
