@@ -1,14 +1,19 @@
 import "./ExpensiveItem.css";
 
-function ExpensiveItem() {
+function ExpensiveItem(props) {
+  const expenseName = "zamalk";
+  const expenseDes = "this is the best club in world";
+  const expensePrice = 1.89;
+
   return (
-    <div>
-        <div>descimber </div>
-        <div>
-            <h2>mohamed bassl</h2>
-            <div>this is my month</div>
-        </div>
+    <div className="expense-item">
+      <div> {props.des}</div>
+
+      <div className="expense-item__description"> 
+        <h2> {props.name}</h2>
+        <div className="expense-item__price">{props.price} millon</div>
+      </div>
     </div>
-  )
+  );
 }
-export default ExpensiveItem;
+export default ExpensiveItem; 
